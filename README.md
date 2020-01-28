@@ -1,6 +1,7 @@
 # Learning Teams MITx: 6.00.1x Guide
 
-The Learning Teams MITx: 6.00.1x Guide is an accessible guide for students taking the MITx: 6.00.1x course on the edX platform. 
+The Learning Teams MITx: 6.00.1x Guide is an accessible guide for students taking the MITx: 6.00.1x course on the edX platform.\
+The site is available at: http://ilbum.com/learningteams/edx_6001x_guide
 
 ## Getting Started
 
