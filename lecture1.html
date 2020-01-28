@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Ilbum Kwak">
+  <title>Learning Teams - MITx: 6.00.1x Guide</title>
+
+  <!-- Favicons -->
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="app.css" rel="stylesheet">
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body class="py-4">
+
+  <!-- container -->
+  <div class="container">
+
+    <!-- breadcrumbs -->
+    <p>
+      Learning Teams
+      <img src="node_modules/bootstrap-icons/icons/chevron-right.svg" alt=">" width="20" height="20" class="breadcrumb-icon">
+      <a href="index.html">MITx: 6.00.1x</a>
+      <img src="node_modules/bootstrap-icons/icons/chevron-right.svg" alt=">" width="20" height="20" class="breadcrumb-icon">
+      <a href="#">Lecture 1</a>
+    </p>
+    <hr>
+    <!-- ./breadcrumbs -->
+
+    <h1>Lecture 1</h1>
+    <!-- container -->
+    <div class="container">
+      <ul>
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">Supplementary Thoughts</a></li>
+      </ul>
+    </div>
+    <!-- ./container -->
+
+    <h2>Notes</h2>
+    <!-- container -->
+    <div class="container">
+      
+      <p><strong>Declarative Knowledge</strong> is a statement of fact, statement of truth.<br>
+        <span class="ml-3"></span>Square root of number x is y such that y*y = x<br>
+        <span class="ml-3"></span>Imperative Knowledge is a recipe a how-to, computation.</p>
+      <ol>
+        <li>Sequence of steps</li>
+        <li><strong>Flow of control</strong> that specifies when each step is executed</li>
+        <li>Means of determining <strong>when to stop</strong></li>
+      </ol>
+      <p>An algorithm is a conceptual idea (math concept) and a program is concrete application of an algorithm.</p>
+      <p><strong>Fixed Program Computer</strong>, example a calculator<br>
+        <strong>Stored Program Computer</strong>, machine stores and executes instructions, what we use</p>
+      <p>Inside the computer is an interpreter, understands instructions and does computations.</p>
+
+      <h3>Basic Machine Architecture</h3>
+      <!-- container -->
+      <div class="container">
+        <img src="assets/image001.png">
+        <p><strong>ALU</strong> unit does is it takes information from memory, reads it in-- often two pieces of information if I'm going to do an operation that takes two inputs-- is going to do a primitive operation could be addition, could be subtraction, could be testing to see if something is true or false, and then typically is going to store stuff back up into memory.</p>
+        <p><strong>Control Unit / Program Counter</strong> points to the first instruction for the ALU to do operations on.</p>
+        <p><strong>Abstract </strong>create new primitives, using the primitives provided by the language</p>
+      </div>
+      <!-- ./container -->
+
+      <h3>Aspects of Language</h3>
+      <!-- container -->
+      <div class="container">
+        <p>Programming languages offer a set of <strong>primitive operations</strong><br /> <strong>Expressions</strong> are complex, legal combinations of primitives in a programming language<br /> Expressions and computations have <strong>values </strong>and meanings in a programming language?</p>
+        <p>Primitive Constructs<br /> English: words<br /> Programming Language: numbers, strings, simple operators (addition, subtraction, comparison)</p>
+        <p><strong>Syntax</strong> is this a legal string or sentence<br>
+          <strong>Static Semantic</strong> is a <strong>syntactically valid string</strong> that can be computed. Things are in the right order with the right types and operations. It can have meaning.<br>
+          <span class="ml-3"></span>3*5 &#8594; syntactically valid<br>
+          <span class="ml-3"></span>3+"hi" &#8594; static semantic error, legally valid but cannot be computed, no meaning<br>
+          <strong>Semantics</strong> is the <strong>actual meaning</strong> with a syntactically legal string of symbols with no static semantic errors.</p>
+        <h4>Challenges with Language</h4>
+        <!-- container -->
+        <div class="container">
+          <p><strong>Syntactic error</strong> illegal combination or typo in string<br>
+            <strong>Static semantic error</strong> things in the right order, but don't make sense<br>
+            <strong>Semantic error</strong> most challenging, the program doesn't do what expected.</p>
+        </div>
+        <!-- ./container -->
+      </div>
+      <!-- ./container -->
+
+    
+    </div>
+    <!-- ./container -->
+
+  </div>
+  <!-- ./container -->
+
+</body>
+
+</html>

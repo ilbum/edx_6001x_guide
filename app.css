@@ -1,0 +1,29 @@
+/**
+  Custom Classes
+**/
+.breadcrumb-icon {
+  vertical-align: -4px;
+}
+
+#table-of-contents-list {
+  font-size: 1.25em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#table-of-contents-list li {
+  list-style-image: url('node_modules/bootstrap-icons/icons/arrow-right.svg');
+  font-weight: 200;
+}
+
+.themed-grid-col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+}
+
+.themed-container {
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 123, 255, .15);
+  border: 1px solid rgba(0, 123, 255, .2);
+}
