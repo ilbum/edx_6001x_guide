@@ -11,6 +11,10 @@ The site is available at: http://ilbum.com/learningteams/edx_6001x_guide
 
 ...
 
+## Future Improvements
+
+Add js scrolling feature for links
+
 ## Built With
 
 Frontend
