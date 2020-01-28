@@ -42,20 +42,21 @@
       <!-- div ml-3  -->
       <div class="ml-3">
       <ul>
-        <li><a href="#">Notes</a></li>
-        <li><a href="#">Supplementary Thoughts</a></li>
+        <li><a href="#">Course Notes</a></li>
+        <li><a href="#">Additional Notes</a></li>
       </ul>
     </div>
     <!-- ./div ml-3 -->
 
-    <h2>Notes</h2>
-    <!-- div ml-3  -->
+    <h2 class="mb-0">Course Notes</h2>
+    <p class="lead mt-0">These notes follow the course material directly.</p>
+    <!-- div 'Course Notes'  -->
     <div class="ml-3">
     
-      <p><strong>Declarative Knowledge</strong> is a statement of fact, statement of truth.<br>
-        <span class="ml-3"></span>Square root of number x is y such that y*y = x<br>
-        <span class="ml-3"></span>Imperative Knowledge is a recipe a how-to, computation.</p>
-      <ol>
+      <p class="mb-0"><strong>Declarative Knowledge</strong> is a statement of fact, statement of truth.</p>
+      <p class="ml-3 my-0">Square root of number x is y such that y*y = x</p>
+      <p class="ml-3 my-0">Imperative Knowledge is a recipe a how-to, computation.</p>
+      <ol class="my-1">
         <li>Sequence of steps</li>
         <li><strong>Flow of control</strong> that specifies when each step is executed</li>
         <li>Means of determining <strong>when to stop</strong></li>
@@ -66,26 +67,34 @@
       <p>Inside the computer is an interpreter, understands instructions and does computations.</p>
 
       <h3>Basic Machine Architecture</h3>
-      <!-- div ml-3  -->
+      <!-- div 'Basic Machine Architecture'  -->
       <div class="ml-3">
         <img src="assets/image001.png">
         <p><strong>ALU</strong> unit does is it takes information from memory, reads it in-- often two pieces of information if I'm going to do an operation that takes two inputs-- is going to do a primitive operation could be addition, could be subtraction, could be testing to see if something is true or false, and then typically is going to store stuff back up into memory.</p>
         <p><strong>Control Unit / Program Counter</strong> points to the first instruction for the ALU to do operations on.</p>
         <p><strong>Abstract </strong>create new primitives, using the primitives provided by the language</p>
       </div>
-      <!-- ./div ml-3 -->
+      <!-- ./div 'Basic Machine Architecture' -->
 
       <h3>Aspects of Language</h3>
-      <!-- div ml-3  -->
+      <!-- div 'Aspects of Language'  -->
       <div class="ml-3">
-        <p>Programming languages offer a set of <strong>primitive operations</strong><br /> <strong>Expressions</strong> are complex, legal combinations of primitives in a programming language<br /> Expressions and computations have <strong>values </strong>and meanings in a programming language?</p>
-        <p>Primitive Constructs<br /> English: words<br /> Programming Language: numbers, strings, simple operators (addition, subtraction, comparison)</p>
+        <p>Programming languages offer a set of <strong>primitive operations</strong><br>
+          <strong>Expressions</strong> are complex, legal combinations of primitives in a programming language<br> Expressions and computations have <strong>values </strong>and meanings in a programming language?</p>
+        <p class="mb-0"><strong>Primitive Constructs</strong></p>
+        <!-- div ml-3  -->
+        <div class="ml-3">
+          <p class="mt-0"><strong>English:</strong> words<br>
+          <strong>Programming Language:</strong> numbers, strings, simple operators (addition, subtraction, comparison)</p>
+        </div>
+        <!-- ./div ml-3 -->
         <p><strong>Syntax</strong> is this a legal string or sentence<br>
           <strong>Static Semantic</strong> is a <strong>syntactically valid string</strong> that can be computed. Things are in the right order with the right types and operations. It can have meaning.<br>
           <span class="ml-3"></span>3*5 &#8594; syntactically valid<br>
           <span class="ml-3"></span>3+"hi" &#8594; static semantic error, legally valid but cannot be computed, no meaning<br>
           <strong>Semantics</strong> is the <strong>actual meaning</strong> with a syntactically legal string of symbols with no static semantic errors.</p>
-        <h4>Challenges with Language</h4>
+        <h4 class="mb-0">Challenges with Language</h4>
+        <p class="mt-0 mb-1"><em>Where things often go wrong</em></p>
         <!-- div ml-3  -->
         <div class="ml-3">
           <p><strong>Syntactic error</strong> illegal combination or typo in string<br>
@@ -94,10 +103,216 @@
         </div>
         <!-- ./div ml-3 -->
       </div>
-      <!-- ./div ml-3 -->
+      <!-- ./div 'Aspects of Language' -->
+
+      <h3>Programming and Types</h3>
+      <!-- div 'Programming and Types'  -->
+      <div class="ml-3">
+        <p class="mb-0">A <strong>python</strong> <strong>program</strong> sequence of definitions and commands.</p>
+        <!-- div ml-3  -->
+        <div class="ml-3">
+          <p class="mt-0"><strong>Definitions</strong> evaluated, definitions are assigning names to values.<br>
+            <strong>Commands</strong> executed by Python interpreter</p>
+        </div>
+        <!-- ./div ml-3 -->
+        
+        <p class="mb-0"><strong>Commands || Statements </strong>instruct the interpreter to do something<br>
+          Programs manipulate <strong>data objects<br>
+          </strong>Objects have <strong>types</strong></p>
+        <!-- div ml-3  -->
+        <div class="ml-3">
+          <p class="mt-0"><strong>Scalar objects</strong> cannot be subdivided<br>
+            <strong>Non-scalar objects</strong> have internal structure that can be accessed</p>
+        </div>
+        <!-- ./div ml-3 -->
+        
+        <p class="mb-0"><strong>Some scalar objects examples in Python</strong></p>
+        <!-- div ml-3  -->
+        <div class="ml-3">
+          <p class="mt-0">int - integar<br>float &ndash; number with decimal<br>
+            bool &ndash; True or False<br>NoneType &ndash; special None value<br>
+            Casting convert a type into something else</p>
+          <div class="themed-grid-col">
+            <code>
+              >>> int(3.9)<br>
+              3<br>
+              # Valid expression example<br>
+              <span class="code-color-option1">&lsaquo;object&rsaquo;&lsaquo;operator&rsaquo;&lsaquo;object&rsaquo;</span><br>
+              >>> 3 + 2<br>
+              5<br>
+              >>> 3.0 + 2<br>
+              5.0<br>
+            </code>
+          </div>
+        </div>
+        <!-- ./div ml-3 -->
+      </div>
+      <!-- ./div 'Programming and Types' -->
+
+      <h3 class="mt-3">Variables and Operators</h3>
+      <!-- div 'Variables and Operators'  -->
+      <div class="ml-3">
+        <h4>Assignment</h4>
+        <!-- div 'Assignment'  -->
+        <div class="ml-3">
+          <p class="mt-0 mb-0">Equal sign is an <strong>assignment</strong> of a value to a variable name. Stores the value in computer memory for the program to access. This will be especially useful and key to programming after other concepts are more developed.</p>
+          <div class="themed-grid-col">
+            <code>
+              >>> pi = 3.14159<br>
+              >>> pi<br>
+              3.14159<br>
+              >>> pi_approx= 22/7<br>
+              >>> pi_approx<br>
+              3.142857142857143
+            </code>
+          </div>
+          <p class="mt-3 mb-0">It's useful to give informative names to code, so you can remember what the variable is used for and others can understand your semantic intention. Reusing variables is permitted as well, but reusing will become clearer later on when to reuse and when to create new variables.</p>
+          <div class="themed-grid-col">
+            <code>
+              >>> pi = 3.14159; radius = 2.2; area = pi*(radius**2)<br>
+              >>> area<br>
+              15.205295600000001<br>
+              >>> area + 1<br>
+              16.2052956<br>
+              >>> area  &nbsp;<span class="code-color-option1"># note the value of area is not changed</span><br>
+              15.205295600000001<br>
+              >>> area += 1 &nbsp;<span class="code-color-option1"># after reassignment it changes, same as area = area + 1</span><br>
+              >>> area<br>
+              16.2052956
+            </code>
+          </div>
+
+          <h5 class="mt-3">Comparison Operators</h5>
+          <!-- div 'Comparison Operators' -->
+          <div class="ml-3">
+            <div class="themed-grid-col">
+              <code>
+                <span class="code-color-option1">&lsaquo;object&rsaquo;</span>&lsaquo;operator&rsaquo;<span class="code-color-option1">&lsaquo;object&rsaquo;</span><br>
+                &lsaquo;value&rsaquo; > &lsaquo;value&rsaquo;<br>
+                &lsaquo;value&rsaquo; >= &lsaquo;value&rsaquo;<br>
+                &lsaquo;value&rsaquo; < &lsaquo;value&rsaquo;<br>
+                &lsaquo;value&rsaquo; <= &lsaquo;value&rsaquo;<br>
+                &lsaquo;value&rsaquo; == &lsaquo;value&rsaquo;<br>
+                &lsaquo;value&rsaquo; != &lsaquo;value&rsaquo;<br>
+                &lsaquo;value&rsaquo; and &lsaquo;value&rsaquo;<br>
+                &lsaquo;value&rsaquo; or &lsaquo;value&rsaquo;
+              </code>
+            </div>
+          </div>
+          <!-- ./div 'Comparison Operators' -->
+
+          <h5 class="mt-3">Boolean: True or False</h5>
+          <!-- div 'Boolean: True or False' -->
+          <div class="ml-3">
+            <div class="themed-grid-col">
+              <code>
+                not a &#8594; is the opposite value.<br>
+                <span class="code-color-option1">If 'a is True' than the 'not a' evaluates to 'False'. If 'a is False' than 'not a' evalutes to 'True'</span><br><br>
+                a and b &#8594; is 'True' if both 'a' and 'b' are 'True'.<br>
+                <span class="code-color-option1">Is 'False' if at least 1 of the values is 'False'.</span><br><br>
+                a or b &#8594; 'True' if at least one value is 'True' or both are 'True'.
+              </code>
+            </div>
+          </div>
+          <!-- ./div 'Boolean: True or False' -->
+        </div>
+        <!-- ./div 'Assignment' -->
+      </div>
+      <!-- ./div 'Variables and Operators' -->
+
+      <h3 class="mt-3">Branching Program</h3>
+      <!-- div 'Branching Program'  -->
+      <div class="ml-3">
+        <p><strong>Conditional</strong> using True or False to tell the computer what to do.<br>
+          It let us do different things, apply logic.<br>
+          <strong>The indentation is required</strong> per each conditional statement</p>
+        <img src="assets/lecture1-branching-programs.png">
+        <div class="themed-grid-col">
+          <code>
+            <span class="code-color-option1"># Conditional Example</span><br>
+            x = int(input('Enter an integer: '))<br>
+            if x%2 == 0:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print(‘’)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print('Even')<br>
+            else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print(‘’)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print('Odd')<br>
+            print('Done with conditional')<br>
+            <br>
+            <span class="code-color-option1"># Nested Conditional</span><br>
+            If x%2 == 0:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;If x%3 == 0:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('Divisible by 2 and 3')<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('Divisible by 2 and not by 3')<br>
+            elif x%3 == 0:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print('Divisible by 3 and not by 2')<br>
+            <br>
+            <span class="code-color-option1"># Compound Boolean</span><br>
+            if x< y and x< z:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print('x is least’)<br>
+            elif y< z:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print('y is least’)<br>
+            else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print('z is least’)
+          </code>
+        </div>
+      </div>
+      <!-- ./div 'Branching Program'  -->
+    </div>
+    <!-- ./div 'Course Notes' -->
+
+    <h2 class="mt-4 mb-0">Additional Notes</h2>
+    <p class="lead mt-0">Follow up research and thoughts to help explain computer science concepts that were touched on in the course notes.</p>
+    <!-- div 'Additional Notes'  -->
+    <div class="ml-3">
+
+      <p><strong>Python REPL<br>
+        </strong><a href="https://pythonprogramminglanguage.com/repl/">https://pythonprogramminglanguage.com/repl/</a></p>
+
+      <p><strong>Is Python interpreted, or compiled, or both<br>
+        </strong><a href="https://stackoverflow.com/questions/6889747/is-python-interpreted-or-compiled-or-both">https://stackoverflow.com/questions/6889747/is-python-interpreted-or-compiled-or-both</a></p>
+      
+      <p class="mb-0"><strong>#67 Python Tutorial for Beginners | is Python Compiled or Interpreted Language?<br>
+        </strong><a href="https://www.youtube.com/watch?v=0BhSWyDEDC4">https://www.youtube.com/watch?v=0BhSWyDEDC4</a></p>
+      <!-- div ml-3 -->
+      <div class="ml-3">
+        <p class="mt-0"><strong>Compiler</strong> changes one language into another. Does not have to be high level language to low low level language.<br>
+          Example: c &#8594; c compiler &#8594; machine language (can communicate to the cpu)<br>
+          <strong>Interpreter</strong> will read execute each line of instruction into a machine language program.</p>
+        <p><strong>Python<br>
+          </strong>&lt;program&gt;.py &#8594; compiler &#8594; bytecode &#8594; interpreter: Python Virtual Machine &#8594; machine language</p>
+        <p><strong>Python bytecode</strong> will look the same on any machine, the <strong>Python Virtual Machine </strong>will be different, especially for different Operating Systems in order to create machine code instructions.</p>
+      </div>
+      <!-- div 'ml-3' -->
+
+      <p class="mb-0"><strong>Python Virtual Machine<br>
+        </strong><a href="https://www.youtube.com/watch?v=aKoGwEPoQ5o">https://www.youtube.com/watch?v=aKoGwEPoQ5o</a></p>
+      <p class="mb-0">Useful in understanding how Python can communicate with the CPU.</p>
+      <ol class="mt-0">
+        <li>Python compiles into bytecode
+          <ol>
+            <li>CPU cannot read bytecode and it is not human readable code.</li>
+            <li>Note: &lt;file_name&gt;.pyc is a compiled into bytecode already. Difference between speed of processing a .py and .pyc, .py needs to be compiled into bytecode before running.</li>
+          </ol>
+        </li>
+        <li>Python Virtual Machine, an interpreter for the bytecode.
+          <ol>
+            <li>Written in C</li>
+            <li>Emulates a virtual machine</li>
+          </ol>
+        </li>
+      </ol>
+
+      <p class="mb-0"><strong>Explains languages and assembly<br></strong><a href="https://www.reddit.com/r/explainlikeimfive/comments/1m1530/eli5_the_different_practical_uses_of_the_most/">https://www.reddit.com/r/explainlikeimfive/comments/1m1530/eli5_the_different_practical_uses_of_the_most/</a></p>
+      <!-- div ml-3 -->
+      <div class="ml-3">
+        <p>&ldquo;<strong>Machine Code</strong> is the language your CPU understands, and Assembly is the closest thing humans usually get to Machine code. All other languages are run through your CPU as Machine Code. Every command in Assembly translates directly into a series of 1's and 0's (unless it's a pseudo command which is similar to a function in C or Java).&rdquo; Assembly is translated by an assembler for your cpu to run. The assembler is designed by the chip manufacturer/designer.<br><strong>Virtual Machine</strong> compiled into "bytecode" which is the Machine Code of the virtual machine. Any device that has the virtual machine on it can run this bytecode, but it is still slower than compiling.<br><strong>JIT (just in time)</strong> This is a hybrid of an interpreter and a compiler. As the name suggests, it compiles the code only immediately before it is used. The compiled code used frequently is kept in the program, so that when it is used multiple times it runs significantly faster.</p>
+      </div>
+      <!-- div ml-3 -->
 
     </div>
-    <!-- ./div ml-3 -->
+    <!-- ./div 'Additional Notes' -->
 
   </div>
   <!-- ./container -->
