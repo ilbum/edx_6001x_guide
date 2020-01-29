@@ -16,6 +16,9 @@
   <!-- Custom styles for this template -->
   <link href="app.css" rel="stylesheet">
 
+  <!-- code-prettify -->
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -69,7 +72,7 @@
       <h3>Basic Machine Architecture</h3>
       <!-- div 'Basic Machine Architecture'  -->
       <div class="ml-3">
-        <img src="assets/image001.png">
+        <img src="assets/lecture1-basic-machine-architecture.png" class="img-fluid" width="800">
         <p><strong>ALU</strong> unit does is it takes information from memory, reads it in-- often two pieces of information if I'm going to do an operation that takes two inputs-- is going to do a primitive operation could be addition, could be subtraction, could be testing to see if something is true or false, and then typically is going to store stuff back up into memory.</p>
         <p><strong>Control Unit / Program Counter</strong> points to the first instruction for the ALU to do operations on.</p>
         <p><strong>Abstract </strong>create new primitives, using the primitives provided by the language</p>
@@ -132,18 +135,14 @@
           <p class="mt-0">int - integar<br>float &ndash; number with decimal<br>
             bool &ndash; True or False<br>NoneType &ndash; special None value<br>
             Casting convert a type into something else</p>
-          <div class="themed-grid-col">
-            <code>
-              >>> int(3.9)<br>
-              3<br>
-              # Valid expression example<br>
-              <span class="code-color-option1">&lsaquo;object&rsaquo;&lsaquo;operator&rsaquo;&lsaquo;object&rsaquo;</span><br>
-              >>> 3 + 2<br>
-              5<br>
-              >>> 3.0 + 2<br>
-              5.0<br>
-            </code>
-          </div>
+<pre class="prettyprint themed-grid-col"><code>>>> int(3.9)
+3
+# Valid expression example
+&lsaquo;object&rsaquo;&lsaquo;operator&rsaquo;&lsaquo;object&rsaquo;
+>>> 3 + 2
+5
+>>> 3.0 + 2
+5.0</code></pre>
         </div>
         <!-- ./div ml-3 -->
       </div>
@@ -156,65 +155,51 @@
         <!-- div 'Assignment'  -->
         <div class="ml-3">
           <p class="mt-0 mb-0">Equal sign is an <strong>assignment</strong> of a value to a variable name. Stores the value in computer memory for the program to access. This will be especially useful and key to programming after other concepts are more developed.</p>
-          <div class="themed-grid-col">
-            <code>
-              >>> pi = 3.14159<br>
-              >>> pi<br>
-              3.14159<br>
-              >>> pi_approx= 22/7<br>
-              >>> pi_approx<br>
-              3.142857142857143
-            </code>
-          </div>
+<pre class="prettyprint themed-grid-col"><code>>>> pi = 3.14159
+>>> pi
+3.14159
+>>> pi_approx= 22/7
+>>> pi_approx
+3.142857142857143</code></pre>
           <p class="mt-3 mb-0">It's useful to give informative names to code, so you can remember what the variable is used for and others can understand your semantic intention. Reusing variables is permitted as well, but reusing will become clearer later on when to reuse and when to create new variables.</p>
-          <div class="themed-grid-col">
-            <code>
-              >>> pi = 3.14159; radius = 2.2; area = pi*(radius**2)<br>
-              >>> area<br>
-              15.205295600000001<br>
-              >>> area + 1<br>
-              16.2052956<br>
-              >>> area  &nbsp;<span class="code-color-option1"># note the value of area is not changed</span><br>
-              15.205295600000001<br>
-              >>> area += 1 &nbsp;<span class="code-color-option1"># after reassignment it changes, same as area = area + 1</span><br>
-              >>> area<br>
-              16.2052956
-            </code>
-          </div>
+<pre class="prettyprint themed-grid-col"><code>>>> pi = 3.14159; radius = 2.2; area = pi*(radius**2)
+>>> area
+15.205295600000001
+>>> area + 1
+16.2052956
+>>> area   # note the value of area is not changed
+15.205295600000001
+>>> area += 1  # after reassignment it changes, same as area = area + 1
+>>> area
+16.2052956</code></pre>
         </div>
         <!-- ./div 'Assignment' -->
 
         <h4 class="mt-3">Comparison Operators</h4>
         <!-- div 'Comparison Operators' -->
         <div class="ml-3">
-          <div class="themed-grid-col">
-            <code>
-              <span class="code-color-option1">&lsaquo;object&rsaquo;</span>&lsaquo;operator&rsaquo;<span class="code-color-option1">&lsaquo;object&rsaquo;</span><br>
-              &lsaquo;value&rsaquo; > &lsaquo;value&rsaquo;<br>
-              &lsaquo;value&rsaquo; >= &lsaquo;value&rsaquo;<br>
-              &lsaquo;value&rsaquo; < &lsaquo;value&rsaquo;<br>
-              &lsaquo;value&rsaquo; <= &lsaquo;value&rsaquo;<br>
-              &lsaquo;value&rsaquo; == &lsaquo;value&rsaquo;<br>
-              &lsaquo;value&rsaquo; != &lsaquo;value&rsaquo;<br>
-              &lsaquo;value&rsaquo; and &lsaquo;value&rsaquo;<br>
-              &lsaquo;value&rsaquo; or &lsaquo;value&rsaquo;
-            </code>
-          </div>
+<pre class="prettyprint themed-grid-col"><code>&lsaquo;object&rsaquo; &lsaquo;operator&rsaquo; &lsaquo;object&rsaquo;
+&lsaquo;value&rsaquo; > &lsaquo;value&rsaquo;
+&lsaquo;value&rsaquo; >= &lsaquo;value&rsaquo;
+&lsaquo;value&rsaquo; < &lsaquo;value&rsaquo;
+&lsaquo;value&rsaquo; <= &lsaquo;value&rsaquo;
+&lsaquo;value&rsaquo; == &lsaquo;value&rsaquo;
+&lsaquo;value&rsaquo; != &lsaquo;value&rsaquo;
+&lsaquo;value&rsaquo; and &lsaquo;value&rsaquo;
+&lsaquo;value&rsaquo; or &lsaquo;value&rsaquo;</code></pre>
         </div>
         <!-- ./div 'Comparison Operators' -->
 
         <h4 class="mt-3">Boolean: True or False</h4>
         <!-- div 'Boolean: True or False' -->
         <div class="ml-3">
-          <div class="themed-grid-col">
-            <code>
-              not a &#8594; is the opposite value.<br>
-              <span class="code-color-option1">If 'a is True' than the 'not a' evaluates to 'False'. If 'a is False' than 'not a' evalutes to 'True'</span><br><br>
-              a and b &#8594; is 'True' if both 'a' and 'b' are 'True'.<br>
-              <span class="code-color-option1">Is 'False' if at least 1 of the values is 'False'.</span><br><br>
-              a or b &#8594; 'True' if at least one value is 'True' or both are 'True'.
-            </code>
-          </div>
+<pre class="prettyprint themed-grid-col"><code>not a &#8594; is the opposite value.
+If 'a is True' than the 'not a' evaluates to 'False'. If 'a is False' than 'not a' evalutes to 'True'
+
+a and b &#8594; is 'True' if both 'a' and 'b' are 'True'.
+Is 'False' if at least 1 of the values is 'False'.
+
+a or b &#8594; 'True' if at least one value is 'True' or both are 'True'.</code></pre>
         </div>
         <!-- ./div 'Boolean: True or False' -->
 
@@ -227,37 +212,33 @@
         <p><strong>Conditional</strong> using True or False to tell the computer what to do.<br>
           It let us do different things, apply logic.<br>
           <strong>The indentation is required</strong> per each conditional statement</p>
-        <img src="assets/lecture1-branching-programs.png">
-        <div class="themed-grid-col">
-          <code>
-            <span class="code-color-option1"># Conditional Example</span><br>
-            x = int(input('Enter an integer: '))<br>
-            if x%2 == 0:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(‘’)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print('Even')<br>
-            else:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print(‘’)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print('Odd')<br>
-            print('Done with conditional')<br>
-            <br>
-            <span class="code-color-option1"># Nested Conditional</span><br>
-            If x%2 == 0:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;If x%3 == 0:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('Divisible by 2 and 3')<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;else:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('Divisible by 2 and not by 3')<br>
-            elif x%3 == 0:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print('Divisible by 3 and not by 2')<br>
-            <br>
-            <span class="code-color-option1"># Compound Boolean</span><br>
-            if x< y and x< z:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print('x is least’)<br>
-            elif y< z:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print('y is least’)<br>
-            else:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;print('z is least’)
-          </code>
-        </div>
+        <img src="assets/lecture1-branching-problems.png" class="img-fluid" width="800">
+<pre class="prettyprint themed-grid-col mt-1"><code># Conditional Example
+x = int(input('Enter an integer: '))
+if x%2 == 0:
+    print(‘’)
+    print('Even')
+else:
+    print(‘’)
+    print('Odd')
+print('Done with conditional')
+
+# Nested Conditional
+If x%2 == 0:
+    If x%3 == 0:
+        print('Divisible by 2 and 3')
+    else:
+        print('Divisible by 2 and not by 3')
+elif x%3 == 0:
+    print('Divisible by 3 and not by 2')
+
+# Compound Boolean
+if x < y and x < z:
+    print('x is least’)
+elif y< z:
+    print('y is least’)
+else:
+    print('z is least’)</code></pre>
       </div>
       <!-- ./div 'Branching Program'  -->
     </div>
@@ -268,14 +249,11 @@
     <!-- div 'Additional Notes'  -->
     <div class="ml-3">
 
-      <p><strong>Python REPL<br>
-        </strong><a href="https://pythonprogramminglanguage.com/repl/">https://pythonprogramminglanguage.com/repl/</a></p>
+      <p class="wordwrap"><strong>Python REPL</strong><br><a href="https://pythonprogramminglanguage.com/repl/">https://pythonprogramminglanguage.com/repl/</a></p>
 
-      <p><strong>Is Python interpreted, or compiled, or both<br>
-        </strong><a href="https://stackoverflow.com/questions/6889747/is-python-interpreted-or-compiled-or-both">https://stackoverflow.com/questions/6889747/is-python-interpreted-or-compiled-or-both</a></p>
+      <p class="wordwrap"><strong>Is Python interpreted, or compiled, or both</strong><br><a href="https://stackoverflow.com/questions/6889747/is-python-interpreted-or-compiled-or-both">https://stackoverflow.com/questions/6889747/is-python-interpreted-or-compiled-or-both</a></p>
       
-      <p class="mb-0"><strong>#67 Python Tutorial for Beginners | is Python Compiled or Interpreted Language?<br>
-        </strong><a href="https://www.youtube.com/watch?v=0BhSWyDEDC4">https://www.youtube.com/watch?v=0BhSWyDEDC4</a></p>
+      <p class="mb-0 wordwrap"><strong>#67 Python Tutorial for Beginners | is Python Compiled or Interpreted Language?</strong><br><a href="https://www.youtube.com/watch?v=0BhSWyDEDC4">https://www.youtube.com/watch?v=0BhSWyDEDC4</a></p>
       <!-- div ml-3 -->
       <div class="ml-3">
         <p class="mt-0"><strong>Compiler</strong> changes one language into another. Does not have to be high level language to low low level language.<br>
@@ -287,8 +265,7 @@
       </div>
       <!-- div 'ml-3' -->
 
-      <p class="mb-0"><strong>Python Virtual Machine<br>
-        </strong><a href="https://www.youtube.com/watch?v=aKoGwEPoQ5o">https://www.youtube.com/watch?v=aKoGwEPoQ5o</a></p>
+      <p class="mb-0 wordwrap"><strong>Python Virtual Machine</strong><br><a href="https://www.youtube.com/watch?v=aKoGwEPoQ5o">https://www.youtube.com/watch?v=aKoGwEPoQ5o</a></p>
       <p class="mb-0">Useful in understanding how Python can communicate with the CPU.</p>
       <ol class="mt-0">
         <li>Python compiles into bytecode
@@ -305,10 +282,12 @@
         </li>
       </ol>
 
-      <p class="mb-0"><strong>Explains languages and assembly<br></strong><a href="https://www.reddit.com/r/explainlikeimfive/comments/1m1530/eli5_the_different_practical_uses_of_the_most/">https://www.reddit.com/r/explainlikeimfive/comments/1m1530/eli5_the_different_practical_uses_of_the_most/</a></p>
+      <p class="mb-0 wordwrap"><strong>Explains languages and assembly</strong><br><a href="https://www.reddit.com/r/explainlikeimfive/comments/1m1530/eli5_the_different_practical_uses_of_the_most/">https://www.reddit.com/r/explainlikeimfive/comments/1m1530/eli5_the_different_practical_uses_of_the_most/</a></p>
       <!-- div ml-3 -->
       <div class="ml-3">
-        <p>&ldquo;<strong>Machine Code</strong> is the language your CPU understands, and Assembly is the closest thing humans usually get to Machine code. All other languages are run through your CPU as Machine Code. Every command in Assembly translates directly into a series of 1's and 0's (unless it's a pseudo command which is similar to a function in C or Java).&rdquo; Assembly is translated by an assembler for your cpu to run. The assembler is designed by the chip manufacturer/designer.<br><strong>Virtual Machine</strong> compiled into "bytecode" which is the Machine Code of the virtual machine. Any device that has the virtual machine on it can run this bytecode, but it is still slower than compiling.<br><strong>JIT (just in time)</strong> This is a hybrid of an interpreter and a compiler. As the name suggests, it compiles the code only immediately before it is used. The compiled code used frequently is kept in the program, so that when it is used multiple times it runs significantly faster.</p>
+        <p>&ldquo;<strong>Machine Code</strong> is the language your CPU understands, and Assembly is the closest thing humans usually get to Machine code. All other languages are run through your CPU as Machine Code. Every command in Assembly translates directly into a series of 1's and 0's (unless it's a pseudo command which is similar to a function in C or Java).&rdquo; Assembly is translated by an assembler for your cpu to run. The assembler is designed by the chip manufacturer/designer.<br>
+          <strong>Virtual Machine</strong> compiled into "bytecode" which is the Machine Code of the virtual machine. Any device that has the virtual machine on it can run this bytecode. The virtual machine is operating system dependent.<br>
+          <strong>JIT (just in time)</strong> This is a hybrid of an interpreter and a compiler. As the name suggests, it compiles the code only immediately before it is used. The compiled code used frequently is kept in the program, so that when it is used multiple times it runs significantly faster.</p>
       </div>
       <!-- div ml-3 -->
 

@@ -23,6 +23,7 @@ Frontend
 * jqBootstrapValidation 1.3.7
 * jquery 3.4.1
 * jquery.easing 1.4.1
+* code-prettify
 
 ## Authors
 

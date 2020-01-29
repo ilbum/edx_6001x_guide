@@ -23,7 +23,7 @@
 }
 
 .themed-grid-col {
-  padding: 15px;
+  padding: 15px !important;
   background-color: rgba(86, 61, 124, .15);
   border: 1px solid rgba(86, 61, 124, .2);
 }
@@ -37,4 +37,12 @@
 
 .code-color-option1 {
   color: #15ab66;
+}
+
+.wordwrap { 
+  white-space: pre-wrap;      /* CSS3 */   
+  white-space: -moz-pre-wrap; /* Firefox */    
+  white-space: -pre-wrap;     /* Opera <7 */   
+  white-space: -o-pre-wrap;   /* Opera 7 */    
+  word-wrap: break-word;      /* IE */
 }
