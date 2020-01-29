@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Ilbum Kwak">
+  <title>Learning Teams - MITx: 6.00.1x Guide</title>
+
+  <!-- Favicons -->
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="app.css" rel="stylesheet">
+
+  <!-- code-prettify -->
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body class="py-4">
+
+  <!-- container -->
+  <div class="container">
+
+    <!-- breadcrumbs -->
+    <p>
+      Learning Teams
+      <img src="node_modules/bootstrap-icons/icons/chevron-right.svg" alt=">" width="20" height="20" class="breadcrumb-icon">
+      <a href="index.html">MITx: 6.00.1x</a>
+      <img src="node_modules/bootstrap-icons/icons/chevron-right.svg" alt=">" width="20" height="20" class="breadcrumb-icon">
+      <a href="#">Lecture 2</a>
+    </p>
+    <hr>
+    <!-- ./breadcrumbs -->
+
+    <h1>Lecture 2</h1>
+    <!-- div ml-3  -->
+    <div class="ml-3">
+      <ul>
+        <li><a href="#course-notes">Course Notes</a></li>
+        <li><a href="#additional-notes">Additional Notes</a></li>
+      </ul>
+    </div>
+    <!-- ./div ml-3 -->
+
+    <h2 class="mb-0" id="course-notes">Course Notes</h2>
+    <p class="lead mt-0">These notes follow the course material directly.</p>
+    <!-- div 'Course Notes'  -->
+    <div class="ml-3">
+
+      <h3>Strings</h3>
+      <!-- div 'Strings'  -->
+      <div class="ml-3">
+<pre class="prettyprint themed-grid-col"><code># Use single or double quotes to create a string
+hi = "hello there"
+greetings = 'hello'
+
+# String concatenation
+>>> name = "Eric"
+>>> greet = hi + name
+'hello thereEric'
+>>> greeting = hi + " " + name
+'hello there Eric'
+>>> name*3
+'EricEricEric'
+>>> len('hi there')
+8</code></pre>
+
+        <!-- div row -->
+        <div class="row">
+          <div class="col-6 pr-0">
+<pre class="prettyprint themed-grid-col"><code># String indexing
+>>> name[0]
+'E'
+>>> name[0]
+'E'
+>>> 'Eric'[0]
+'E'
+>>> 'Eric'[1]
+'r'
+>>> 'Eric'[4]
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+    IndexError: string index out of range
+>>> 'Eric'[1:3]
+'ri'
+>>> 'Eric'[:3]
+'Eri'
+>>> 'Eric'[1:]
+'ric'
+>>> 'Eric'[:]
+'Eric'
+>>> 'Eric'[-1:]
+'c'
+>>> 'Eric'[:-1]
+'Eri'
+>>> 'Eric'[-3:-1]
+'ri'</code></pre>
+  </div>
+  <div class="col-6 pl-0">
+<pre class="prettyprint themed-grid-col"><code>>>> s = 'Python is Fun?'
+>>> len(s)
+14
+>>> a 
+'ytho'
+>>> s[:5]
+'Pytho'
+>>> s[1:]
+'ython is Fun!'
+>>> s[:]
+'Python is Fun!'
+# 'a = s' a would reference s, 
+# 'a = s[:]' a would receive s' values
+>>> s[::1]
+'Python is Fun!'
+>>> s[::2]
+'Pto sFn'
+>>> s[::3]
+'Ph n'
+>>> s[1:12:2]
+'yhni u'
+>>> s[1:12:3]
+'yoiF'
+>>> s[::-1]
+'!nuF si nohtyP'
+>>> s[::-3]
+'!Fioy'</code></pre>
+        </div>
+      </div>
+      <!-- ./div row -->
+
+      </div>
+      <!-- ./div 'Strings' -->
+      
+    </div>
+    <!-- ./div 'Course Notes' -->
+
+    <h2 class="mt-4 mb-0" id="additional-notes">Additional Notes</h2>
+    <p class="lead mt-0">Follow up research and thoughts to help explain computer science concepts that were touched on in the course notes.</p>
+    <!-- div 'Additional Notes'  -->
+    <div class="ml-3">
+
+      <p>stuff here</p>
+
+    </div>
+    <!-- ./div 'Additional Notes' -->
+
+  </div>
+  <!-- ./container -->
+
+</body>
+
+</html>
