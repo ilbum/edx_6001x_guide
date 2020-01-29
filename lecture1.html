@@ -72,6 +72,7 @@
       <h3>Basic Machine Architecture</h3>
       <!-- div 'Basic Machine Architecture'  -->
       <div class="ml-3">
+        <a href="assets/lecture1-basic-machine-architecture.png" target="newWindow">Full-sized Image</a><br>
         <img src="assets/lecture1-basic-machine-architecture.png" class="img-fluid" width="800">
         <p><strong>ALU</strong> unit does is it takes information from memory, reads it in-- often two pieces of information if I'm going to do an operation that takes two inputs-- is going to do a primitive operation could be addition, could be subtraction, could be testing to see if something is true or false, and then typically is going to store stuff back up into memory.</p>
         <p><strong>Control Unit / Program Counter</strong> points to the first instruction for the ALU to do operations on.</p>
@@ -137,8 +138,8 @@
             Casting convert a type into something else</p>
 <pre class="prettyprint themed-grid-col"><code>>>> int(3.9)
 3
-# Valid expression example
-&lsaquo;object&rsaquo;&lsaquo;operator&rsaquo;&lsaquo;object&rsaquo;
+# Valid expression syntax
+# &lsaquo;object&rsaquo;&lsaquo;operator&rsaquo;&lsaquo;object&rsaquo;
 >>> 3 + 2
 5
 >>> 3.0 + 2
@@ -167,7 +168,7 @@
 15.205295600000001
 >>> area + 1
 16.2052956
->>> area   # note the value of area is not changed
+>>> area       # note the value of area is not changed
 15.205295600000001
 >>> area += 1  # after reassignment it changes, same as area = area + 1
 >>> area
@@ -212,14 +213,15 @@ a or b &#8594; 'True' if at least one value is 'True' or both are 'True'.</code>
         <p><strong>Conditional</strong> using True or False to tell the computer what to do.<br>
           It let us do different things, apply logic.<br>
           <strong>The indentation is required</strong> per each conditional statement</p>
+        <a href="assets/lecture1-branching-problems.png" target="newWindow">Full-sized Image</a><br>
         <img src="assets/lecture1-branching-problems.png" class="img-fluid" width="800">
 <pre class="prettyprint themed-grid-col mt-1"><code># Conditional Example
 x = int(input('Enter an integer: '))
 if x%2 == 0:
-    print(‘’)
+    print('')
     print('Even')
 else:
-    print(‘’)
+    print('')
     print('Odd')
 print('Done with conditional')
 
@@ -234,9 +236,9 @@ elif x%3 == 0:
 
 # Compound Boolean
 if x < y and x < z:
-    print('x is least’)
+    print('x is least')
 elif y< z:
-    print('y is least’)
+    print('y is least')
 else:
     print('z is least’)</code></pre>
       </div>
