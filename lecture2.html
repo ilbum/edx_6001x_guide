@@ -59,8 +59,8 @@
       <h3>Strings</h3>
       <!-- div 'Strings'  -->
       <div class="ml-3">
-<pre class="prettyprint themed-grid-col"><code># Use single or double quotes to create a string
-hi = "hello there"
+        <p class="mb-0 font-weight-bold">Use single or double quotes to create a string</p>
+<pre class="prettyprint themed-grid-col"><code>hi = "hello there"
 greetings = 'hello'
 
 # String concatenation
@@ -73,16 +73,12 @@ greetings = 'hello'
 'EricEricEric'
 >>> len('hi there')
 8</code></pre>
-
         <!-- div row -->
         <div class="row">
+          <!-- div col -->
           <div class="col-6 pr-0">
-<pre class="prettyprint themed-grid-col"><code># String indexing
->>> name[0]
-'E'
->>> name[0]
-'E'
->>> 'Eric'[0]
+            <p class="mb-0 font-weight-bold">String indexing</p>
+<pre class="prettyprint themed-grid-col"><code>>>> 'Eric'[0]
 'E'
 >>> 'Eric'[1]
 'r'
@@ -98,27 +94,33 @@ File "<stdin>", line 1, in <module>
 'ric'
 >>> 'Eric'[:]
 'Eric'
+>>> 'Eric'[-1]
+'c'
 >>> 'Eric'[-1:]
 'c'
 >>> 'Eric'[:-1]
 'Eri'
->>> 'Eric'[-3:-1]
-'ri'</code></pre>
-  </div>
-  <div class="col-6 pl-0">
+>>> 'Eric'[-2:-1]
+'i'
+>>> 'Eric'[-4:-1]
+'Eri'</code></pre>
+          </div>
+          <!-- ./div col -->
+          <!-- div col -->
+          <div class="col-6 pl-0">
+            <p class="mb-0 font-weight-bold"><br></p>
 <pre class="prettyprint themed-grid-col"><code>>>> s = 'Python is Fun?'
+>>> a = s
+'Python is Fun?'
+# 'a = s' a is assigned s's values
 >>> len(s)
 14
->>> a 
-'ytho'
 >>> s[:5]
 'Pytho'
 >>> s[1:]
 'ython is Fun!'
 >>> s[:]
 'Python is Fun!'
-# 'a = s' a would reference s, 
-# 'a = s[:]' a would receive s' values
 >>> s[::1]
 'Python is Fun!'
 >>> s[::2]
@@ -133,12 +135,36 @@ File "<stdin>", line 1, in <module>
 '!nuF si nohtyP'
 >>> s[::-3]
 '!Fioy'</code></pre>
+          </div>
+          <!-- ./div col -->
         </div>
-      </div>
-      <!-- ./div row -->
+        <!-- ./div row -->
+
+<pre class="prettyprint themed-grid-col"><code># Printing Strings
+hi = "hello there"
+greetings = 'hello'
+
+# String concatenation
+>>> name = "Eric"
+>>> greet = hi + name
+'hello thereEric'
+>>> greeting = hi + " " + name
+'hello there Eric'
+>>> name*3
+'EricEricEric'
+>>> len('hi there')
+8</code></pre>
 
       </div>
       <!-- ./div 'Strings' -->
+
+      <h3>Range Function</h3>
+      <!-- div 'Range Function'  -->
+      <div class="ml-3">
+        <!-- https://courses.edx.org/courses/course-v1:MITx+6.00.1x+1T2020/courseware/fc8f42302c644118adfcfa720f9f403e/35f82f6c3ecb4e9e913dc279a9b73a9f/9?activate_block_id=block-v1%3AMITx%2B6.00.1x%2B1T2020%2Btype%40html%2Bblock%4020c8103167ad44b894767ce7c27b7bb5 -->
+        check exercise 5
+      </div>
+      <!-- ./div 'Range Function'  -->
       
     </div>
     <!-- ./div 'Course Notes' -->
@@ -148,7 +174,12 @@ File "<stdin>", line 1, in <module>
     <!-- div 'Additional Notes'  -->
     <div class="ml-3">
 
-      <p>stuff here</p>
+      <h3>IDEs</h3>
+      <!-- div 'IDEs'  -->
+      <div class="ml-3">
+        <p>My personally recommended IDE is <a href="https://code.visualstudio.com/" target="newWindow"><strong>Visual Studio Code</strong></a>.<br>A fantastic Python dedicated IDE is <a href="https://www.jetbrains.com/pycharm/" target="newWindow"><strong>PyCharm</strong></a>.</p>
+      </div>
+      <!-- ./div 'IDEs' -->
 
     </div>
     <!-- ./div 'Additional Notes' -->
