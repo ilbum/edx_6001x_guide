@@ -77,6 +77,7 @@
         <p><strong>ALU</strong> unit does is it takes information from memory, reads it in-- often two pieces of information if I'm going to do an operation that takes two inputs-- is going to do a primitive operation could be addition, could be subtraction, could be testing to see if something is true or false, and then typically is going to store stuff back up into memory.</p>
         <p><strong>Control Unit / Program Counter</strong> points to the first instruction for the ALU to do operations on.</p>
         <p><strong>Abstract </strong>create new primitives, using the primitives provided by the language</p>
+        <div class="themed-grid-col mb-3">But how can Python expressions interact with the Basic Machine Architecture model above? <a href="#additional-notes">Learn more in the additional notes.</a></pre>
       </div>
       <!-- ./div 'Basic Machine Architecture' -->
 
@@ -156,6 +157,11 @@
       <div class="ml-3">
         <h4>Assignment</h4>
         <!-- div 'Assignment'  -->
+        <!-- 
+          TODO(ilbum) write out python keywords 
+          https://www.programiz.com/python-programming/keyword-list
+        -->
+        <!-- TODO(ilbum) find a section to put commenting code and why you do this -->
         <div class="ml-3">
           <p class="mt-0 mb-0">Equal sign is an <strong>assignment</strong> of a value to a variable name. Stores the value in computer memory for the program to access. This will be especially useful and key to programming after other concepts are more developed.</p>
 <pre class="prettyprint themed-grid-col"><code>>>> pi = 3.14159
@@ -254,29 +260,33 @@ else:
     <!-- div 'Additional Notes'  -->
     <div class="ml-3">
 
-      <!-- TODO(ilbum) add crash course videos -->
-      <p class="wordwrap mb-0"><strong>Crash Course Computer Science</strong><br><a href="https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo">https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo</a></p>
+      <p class="wordwrap mb-0"><strong>Crash Course Computer Science</strong><br><a href="https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo">https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo</a><br>Great way to introduce the basic concepts of computer science.</p>
       <!-- div ml-3 -->
       <div class="ml-3">
-        <p class="mt-0">Great way to introduce the basic concepts of computer science.</p>
+        <p class="mt-0">
+          <a href="https://www.youtube.com/watch?v=gI-qXk7XojA&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=4">https://www.youtube.com/watch?v=gI-qXk7XojA&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=4</a><br>
+          Episodes #3 to #8 can also assist in giving a better grasp of the concepts introduced in the Basic Machine Architecture section of the course.
+        </p>
+      </div>
+      <!-- div 'ml-3' -->
+
+      <p class="wordwrap mb-0"><strong>Compiler, Interpreter, Transpiler and Python</strong></p>
+      <!-- div ml-3 -->
+      <div class="ml-3">
+        <p class="mt-0"><strong>Compiler</strong> changes one language into another. Does not have to be high level language to low low level language.<br>
+          Example: c &#8594; c compiler &#8594; machine language (can be run directly on the CPU's instruction set. Note that different CPUs have different architectures so the same compiler would generate different code on say x64 and x86. Indeed being able to compile for different architectures, a.k.a. portability, is the main reason for the existence of compiled languages)<br>
+          <strong>Interpreter</strong> will read execute each line of instruction and generate the machine code for it at runtime. This saves the compilation step but adds overhead to the runtime - a tradeoff that is often worth making especially on good hardware.<br>
+          <strong>Transpiler</strong> will convert source code in one language to source code in another language (e.g. TypeScript to javascript). This is useful in order to take advantage of better tooling or type safety in a different language than the platform you are developing for.</p>
+        <p><strong>Python<br>
+          </strong>&lt;program&gt;.py &#8594; compiler &#8594; bytecode &#8594; interpreter: Python Virtual Machine &#8594; machine language</p>
+        <p><strong>Python bytecode</strong> will look the same on any machine, the <strong>Python Virtual Machine </strong>will be different, especially for different Operating Systems in order to create machine code instructions.<br>
+          <strong>Note:</strong> that CPython (the reference implementation) does not always compile python modules (into .pyc files). Its default mode of operation is pure interpretation.</p>
       </div>
       <!-- div 'ml-3' -->
 
       <p class="wordwrap"><strong>Python REPL</strong><br><a href="https://pythonprogramminglanguage.com/repl/">https://pythonprogramminglanguage.com/repl/</a></p>
 
       <p class="wordwrap"><strong>Is Python interpreted, or compiled, or both</strong><br><a href="https://stackoverflow.com/questions/6889747/is-python-interpreted-or-compiled-or-both">https://stackoverflow.com/questions/6889747/is-python-interpreted-or-compiled-or-both</a></p>
-      
-      <p class="wordwrap mb-0"><strong>#67 Python Tutorial for Beginners | is Python Compiled or Interpreted Language?</strong><br><a href="https://www.youtube.com/watch?v=0BhSWyDEDC4">https://www.youtube.com/watch?v=0BhSWyDEDC4</a></p>
-      <!-- div ml-3 -->
-      <div class="ml-3">
-        <p class="mt-0"><strong>Compiler</strong> changes one language into another. Does not have to be high level language to low low level language.<br>
-          Example: c &#8594; c compiler &#8594; machine language (can communicate to the cpu)<br>
-          <strong>Interpreter</strong> will read execute each line of instruction into a machine language program.</p>
-        <p><strong>Python<br>
-          </strong>&lt;program&gt;.py &#8594; compiler &#8594; bytecode &#8594; interpreter: Python Virtual Machine &#8594; machine language</p>
-        <p><strong>Python bytecode</strong> will look the same on any machine, the <strong>Python Virtual Machine </strong>will be different, especially for different Operating Systems in order to create machine code instructions.</p>
-      </div>
-      <!-- div 'ml-3' -->
 
       <p class="wordwrap mb-0"><strong>Python Virtual Machine</strong><br><a href="https://www.youtube.com/watch?v=aKoGwEPoQ5o">https://www.youtube.com/watch?v=aKoGwEPoQ5o</a></p>
       <p class="mb-0">Useful in understanding how Python can communicate with the CPU.</p>
