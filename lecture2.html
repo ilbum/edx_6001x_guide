@@ -75,9 +75,22 @@ greetings = 'hello'
 8</code></pre>
         <!-- div row -->
         <div class="row">
+          <div class="col">
+            <p class="mb-0 font-weight-bold">String indexing</p>
+            <p class="mb-0">
+              Get slices of strings using [start:stop:step]<br>
+              s = "abcdefgh"s[::-1] &#8594; evaluates to "hgfedbca"<br>
+              s[3:6] &#8594; evaluates to "def"<br>
+              s[-1] &#8594; evaluates to "h"
+            </p>
+          </div>
+          <!-- ./div col -->
+        </div>
+        <!-- ./div row -->
+        <!-- div row -->
+        <div class="row">
           <!-- div col -->
           <div class="col-6 pr-0">
-            <p class="mb-0 font-weight-bold">String indexing</p>
 <pre class="prettyprint themed-grid-col"><code>>>> 'Eric'[0]
 'E'
 >>> 'Eric'[1]
@@ -108,7 +121,6 @@ File "<stdin>", line 1, in <module>
           <!-- ./div col -->
           <!-- div col -->
           <div class="col-6 pl-0">
-            <p class="mb-0 font-weight-bold"><br></p>
 <pre class="prettyprint themed-grid-col"><code>>>> s = 'Python is Fun?'
 >>> a = s
 'Python is Fun?'
